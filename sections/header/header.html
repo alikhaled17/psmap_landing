@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="container-fluid">
+    <div class="logo">
+      <img src="../../assets/images/Logo.svg" alt="" class="img-fluid">
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a onclick="clickNavItem(event)" class="nav-link links  active" aria-current="page" href="#started">Home</a>
+        </li>
+        <li class="nav-item">
+          <a onclick="clickNavItem(event)" class="nav-link links" href="#find">About PSMAP</a>
+        </li>
+        <li class="nav-item">
+          <a onclick="clickNavItem(event)" class="nav-link links" href="#report">The Report</a>
+        </li>
+        <li class="nav-item">
+          <a onclick="clickNavItem(event)" class="nav-link links" href="#plans">Prices</a>
+        </li>
+        <li class="nav-item">
+          <a onclick="clickNavItem(event)" class="nav-link links" href="#about">PSMAP Community</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav__language nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <span>En</span>
+          </a>
+          <ul class=" dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" onclick="clickDropdownItem(event)" href="#"><span>En</span></a></li>
+            <li><a class="dropdown-item" onclick="clickDropdownItem(event)" href="#"><span>AR</span></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</nav>

@@ -1,0 +1,66 @@
+@import "../../assets/css/partials/global";
+@import "../../assets/css/partials/_variables.scss";
+
+#find {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../assets/images/find/find_img.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 1rem;
+
+  @media (max-width: 768px) and (orientation: portrait) {
+    background: $color-white;
+  }
+}
+
+.knowledge {
+  width: 60%;
+  font-size: 14px;
+  @media (max-width: 768px) and (orientation: portrait) {
+    width: 90%;
+  }
+}
+
+.col_parent {
+  background-color: $color-white;
+  border-radius: 10px;
+  border: 1px solid #f3f4fe;
+  padding: 40px;
+  margin-bottom: 1rem;
+  min-height: 38vh;
+  @include respond-below(md) {
+    padding: 20px;
+  }
+}
+.txt_head {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: $font-color;
+  margin-top: 1rem;
+}
+
+.txt_subHead {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140.2%;
+  color: $font-color;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .landing__title {
+    width: 100%;
+    font-size: 2rem !important;
+  }
+  .landing__title:after {
+    left: 46% !important;
+  }
+}

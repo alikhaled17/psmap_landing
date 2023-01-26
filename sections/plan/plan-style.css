@@ -1,0 +1,130 @@
+.plan {
+  background-position: 100% -10%;
+  background-size: 20%;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+  background-image: url("../../assets/images/plans-shape.svg");
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  direction: ltr;
+  margin: 3% 0;
+  flex-wrap: wrap;
+}
+@media (max-width: 991px) {
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.plans * {
+  margin: 0;
+  padding: 0;
+}
+.plans__card {
+  text-align: left;
+  min-height: 100%;
+  width: 25%;
+  min-width: 25%;
+  min-height: 70vh;
+  background: #fff;
+  color: #2f354d !important;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 40, 0, 0.1882352941);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 991px) {
+  .plans__card {
+    width: 70%;
+    min-width: 70%;
+  }
+}
+@media (max-width: 991px) {
+  .plans__card {
+    width: 90%;
+    min-width: 90%;
+  }
+}
+.plans__card--primary-title {
+  font-size: 1.7rem;
+  text-transform: none;
+  font-weight: 600;
+}
+.plans__card--second-title {
+  font-size: 1.8rem;
+  text-transform: none;
+  font-weight: 500;
+  margin-top: 24px;
+}
+.plans__card--second-title .price__per {
+  font-size: 1rem;
+}
+.plans__card--desc {
+  font-size: 1rem;
+  text-transform: none;
+  margin-top: 14px;
+  padding: 0;
+}
+.plans__card--btn {
+  border: 1px solid #7a7d8d;
+  color: #7a7d8d;
+  background-color: #fff;
+  outline: none;
+  padding: 8px;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 32px;
+  font-weight: 500;
+}
+.plans__card--list {
+  margin-top: 16px;
+  list-style: none;
+  flex-grow: 1;
+}
+.plans__card--list_item {
+  padding: 4px 0;
+  display: flex;
+  align-items: flex-start;
+}
+.plans__card--list_item .icon {
+  margin: 8px;
+}
+.plans__card--list_item small {
+  font-size: 1rem;
+}
+.plans__card--footer {
+  margin-top: 16px;
+  list-style: none;
+  padding-top: 16px;
+  margin-top: 32px;
+  border-top: 1px solid #2f354d;
+}
+.plans__card.active {
+  background: #ff2800;
+  color: #fff !important;
+}
+.plans__card.active .plans__card--btn {
+  border-color: #fff;
+  color: #ff2800;
+}
+.plans__card.active .plans__card--footer {
+  border-top: 1px solid #fff;
+}
+
+.carousel-dark .carousel-indicators [aria-current] {
+  background-color: #ff2800 !important;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=plan-style.css.map */

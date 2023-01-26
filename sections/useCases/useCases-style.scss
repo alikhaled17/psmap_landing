@@ -1,0 +1,122 @@
+@import "../../assets/css/partials/global";
+@import "../../assets/css/partials/_variables.scss";
+
+#useCases {
+  width: 100%;
+  min-height: 54vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  background-image: url(../../assets/images/useCases/useCases.png);
+  background-size: cover;
+  // @include respond-below(md) {
+  //   background-size: contain;
+  //   height: 100vh;
+  //   background-repeat: no-repeat;
+  //   background-position: 10% 0;
+  // }
+}
+
+.usecases__img {
+  @include respond-below(md) {
+    width: 50%;
+    margin: 20px;
+  }
+}
+
+.goals_title {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #2f354d;
+  margin-bottom: 2rem;
+  text-transform: none;
+  position: relative;
+
+  @media (max-width: 992px) {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 768px) and (orientation: portrait) {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    border: 2px solid #ff2800;
+    height: 0;
+    bottom: -10px;
+    left: 0%;
+  }
+
+  @media (max-width: 768px) and (orientation: portrait) {
+    &:after {
+      left: 46%;
+    }
+  }
+}
+
+.content_width {
+  width: 60%;
+  margin: auto;
+
+  @include respond-below(md) {
+    padding: 30px;
+  }
+  @media (max-width: 768px) and (orientation: portrait) {
+    width: 100%;
+  }
+}
+
+.sub_txt {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140.2%;
+  letter-spacing: 0.3px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #363049;
+
+  @media (max-width: 992px) {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 768px) and (orientation: portrait) {
+    font-size: 14px;
+  }
+}
+
+.provide {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: $color-offred;
+  text-transform: uppercase;
+}
+.ul_parent {
+  ul {
+    padding-left: 0;
+  }
+}
+.icon_color {
+  .icon {
+    color: $color-offred;
+    margin: 5px 4px;
+  }
+  small {
+    color: #382b53;
+  }
+}

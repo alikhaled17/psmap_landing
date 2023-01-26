@@ -1,0 +1,31 @@
+// Theme colors
+$color-white: #fff;
+$color-offwhite: #e0d997;
+$color-offred: #FF2800;
+$font-color:#2F354D;
+
+// Media sizes:
+$media-laptopLarge: "only screen and (max-width : 1440px)";
+$media-laptop: "only screen and (max-width : 1024px)";
+$media-tablet: "only screen and (max-width : 768px)";
+$media-MobileXLarge: "only screen and (max-width : 576px)";
+$media-MobileLarge: "only screen and (max-width : 425px)";
+$media-MobileMedium: "only screen and (max-width : 375px)";
+$media-MobileSmall: "only screen and (max-width : 320px)";
+$media-mobile-and-higher-only: "only screen and (min-width : 426px)";
+$media-tablets-and-higher-only: "only screen and (min-width : 769px)";
+$media-laptops-and-higher-only: "only screen and (min-width : 1366px)";
+
+$media-ipadPro-portrait: "only screen and (max-width : 1024px) and (orientation: portrait)";
+$media-tablet-portrait: "only screen and (max-width : 768px) and (orientation: portrait)";
+$media-MobileXLarge-portrait: "only screen and (max-width : 576px) and (orientation: portrait)";
+$media-MobileMedium-portrait: "only screen and (max-width : 375px) and (orientation: portrait)";
+
+// Overide bootstap colors
+// $primary: $color-dark-green;
+// $success: $color-light-green-2;
+// $warning: $color-orange;
+// $border-radius: 0;
+// $border-width: 2px;
+// $accordion-border-color: $color-dark-green-2;
+// $modal-border-radius: 0;

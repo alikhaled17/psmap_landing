@@ -1,0 +1,48 @@
+@import "./theme.scss";
+@import "../../sections/header/header-style.scss";
+@import "../../sections/started/started.scss";
+@import "../../sections/find/find-style.scss";
+@import "../../sections/useCases/useCases-style.scss";
+@import "../../sections/dialogue/dialogue-style.scss";
+@import "../../sections/goals/goals-style.scss";
+@import "../../sections/report/report-style.scss";
+
+@import "../../sections/plan/plan-style.scss";
+@import "../../sections/about/about-style.scss";
+@import "../../sections/participate/participate-style.scss";
+@import "../../sections/gettoutch/gettoutch-style.scss";
+@import "../../sections/border/border-style.scss";
+@import "../../sections/footer/footer-style.scss";
+
+.landing__title {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #2f354d;
+  text-transform: none;
+  position: relative;
+  margin: 40px auto;
+  @include respond-below(md) {
+    font-size: 1rem;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    border: 2px solid #ff2800;
+    height: 0;
+    bottom: -10px;
+    left: 50%;
+  }
+}
+
+.landing__desc {
+  font-family: "Cairo";
+  font-style: normal;
+  font-size: 1rem;
+  text-align: center;
+  color: #2f354d;
+  text-transform: none;
+}

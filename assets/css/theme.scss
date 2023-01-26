@@ -1,0 +1,27 @@
+// Importing partails
+@import "./partials/fonts";
+@import "./partials/variables";
+@import "./partials/mixins";
+
+// Importing Bootstap
+// @import "./bootstrap/bootstrap";
+
+// Importing slick slider
+// @import "./slick-slider/_slick";
+// @import "./slick-slider/_slick-theme";
+
+// Importing Fontawsome
+// @import "./fontawsome/scss/fontawesome.scss";
+// @import "./fontawsome/scss/solid.scss";
+// @import "./fontawsome/scss/brands.scss";
+
+// Global styles
+@import "./partials/global";
+
+@import "./partials/placholders";
+
+// Header
+@import "./partials/header";
+
+// Footer
+@import "./partials/footer";

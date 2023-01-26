@@ -1,0 +1,32 @@
+<section class="gettoutch">
+    <h3 class="landing__title">Get in touch</h3>
+    <p class="landing__desc">We will answer your questions and problem</p>
+    <form class="gettoutch__form" onsubmit="sendMessage(event)">
+        <div class="custom__input">
+            <div class="input__group pe-2 ps-2">
+                <img src="../../assets/images/form/user.png" alt="">
+                <input type="text" id="name" placeholder="Full Name" required>
+            </div>
+            <!-- <small class="text-danger fullname-msg"></small> -->
+        </div>
+        <div class="custom__input">
+            <div class="input__group pe-2 ps-2">
+                <img src="../../assets/images/form/sms.png" alt="">
+                <input type="email" id="mail" placeholder="Email" required>
+            </div>
+            <!-- <small class="text-danger email-msg"></small> -->
+        </div>
+        <div class="custom__input">
+            <div class="input__group">
+                <textarea name="" id="contact-msg" cols="30" rows="5" placeholder="Type your question"
+                    required></textarea>
+            </div>
+            </diiv>
+        </div>
+        <small class="text-success fullname-msg fw-bold fs-4" id="form_msg"></small>
+        <div class="custom__input mt-3">
+            <button type="submit" class="btn w-100" style="background-color: #ff2800; color: #fff">Send</button>
+        </div>
+    </form>
+
+</section>

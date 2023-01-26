@@ -1,0 +1,95 @@
+@import "../../assets/css/partials/global";
+@import "../../assets/css/partials/_variables.scss";
+
+#goals {
+  width: 100%;
+  min-height: 54vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  background: $color-white;
+}
+
+.goals__icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  @include respond-below(md) {
+    gap: 5px;
+    justify-content: center;
+    img {
+      max-height: 25px;
+    }
+  }
+}
+
+.goals_title {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #2f354d;
+  margin-bottom: 2rem;
+  text-transform: none;
+  position: relative;
+  @media (max-width: 992px) {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  @media (max-width: 768px) and (orientation: portrait) {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    border: 2px solid #ff2800;
+    height: 0;
+    bottom: -10px;
+    left: 0%;
+  }
+
+  @media (max-width: 768px) and (orientation: portrait) {
+    &:after {
+      left: 46%;
+    }
+  }
+}
+.content_width {
+  width: 60%;
+  margin: auto;
+  @media (max-width: 768px) and (orientation: portrait) {
+    width: 100%;
+  }
+}
+
+.sub_txt {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140.2%;
+  letter-spacing: 0.3px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #363049;
+  @media (max-width: 992px) {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  @media (max-width: 768px) and (orientation: portrait) {
+    font-size: 14px;
+  }
+}
+.cust_flex {
+  justify-content: space-between;
+  @media (max-width: 768px) and (orientation: portrait) {
+    justify-content: center;
+    align-items: center;
+  }
+}

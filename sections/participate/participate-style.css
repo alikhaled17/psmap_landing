@@ -1,0 +1,58 @@
+.participate {
+  margin-top: 100px;
+  min-height: 60vh;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/participate/participate-bg.svg");
+}
+.participate p {
+  font-size: 1.1rem;
+}
+@media (max-width: 991px) {
+  .participate p {
+    font-size: 0.9rem;
+  }
+}
+.participate .carousel-indicators {
+  margin-bottom: -2%;
+  z-index: 1;
+}
+.participate .carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  color: #000;
+  border-radius: 10px;
+}
+.participate .carousel-item {
+  padding: 5% 15%;
+  text-align: center;
+}
+.participate .carousel-item img {
+  border-radius: 20px;
+  border: 0;
+}
+@media (max-width: 991px) {
+  .participate .carousel-item img {
+    border-radius: 5px;
+  }
+}
+.participate .name {
+  font-size: 16px;
+}
+.participate .carousel-control-next span:first-child,
+.participate .carousel-control-prev span:first-child {
+  background-color: transparent;
+  width: 5px !important;
+}
+@media (max-width: 991px) {
+  .participate .arrows {
+    width: 20px;
+  }
+}
+.participate .btn-danger {
+  background-color: #ff2800 !important;
+}
+
+/*# sourceMappingURL=participate-style.css.map */
