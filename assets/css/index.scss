@@ -26,15 +26,17 @@
   margin: 40px auto;
   @include respond-below(md) {
     font-size: 1rem;
+    margin: 24px auto;
   }
   &:after {
     content: "";
+    border-radius: 4px;
     position: absolute;
     width: 30px;
     border: 2px solid #ff2800;
     height: 0;
     bottom: -10px;
-    left: 50%;
+    left: 49%;
   }
 }
 

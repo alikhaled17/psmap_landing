@@ -1,34 +1,48 @@
-// document.getElementById('but').addEventListener('click', (e)=>{
-//     e.preventDefault();
-//     document.getElementById('style').attributes[2].value = 'assets/css/ar.scss'
-//     console.log(document.getElementById('style').attributes[2].value);
-// })
+document.querySelectorAll(".dropdown-item").forEach((ele) => {
+  console.log(ele);
+});
 
-document.querySelectorAll('.dropdown-item').forEach((ele)=>{
-    console.log(ele);
-})
-// const links = document.getElementsByClassName('dropdown-item');
-console.log(document.querySelectorAll('.dropdown-item'));
+console.log(document.querySelectorAll(".dropdown-item"));
 
 function clickNavItem(e) {
-    document.querySelector('.nav-link.active').classList.remove('active')
-    e.target.classList.add('active')
+  document
+    .querySelector(".nav__section--item a.active")
+    .classList.remove("active");
+  e.target.classList.add("active");
 }
+
+function clickSideNavItem(e) {
+  document
+    .querySelector(".modal--item .nav-link.active")
+    .classList.remove("active");
+  e.target.classList.add("active");
+  document
+    .querySelector(".nav__section_sidebar.active")
+    .classList.remove("active");
+}
+
+function openSidebar(e) {
+  document.querySelector(".nav__section_sidebar").classList.add("active");
+}
+
+function closeSidebar(e) {
+  console.log(e.target.classList);
+  if (e.target.classList.contains("nav__section_sidebar")) {
+    document
+      .querySelector(".nav__section_sidebar.active")
+      .classList.remove("active");
+  }
+}
+
 function clickDropdownItem(e) {
-    document.querySelector('.dropdown-item').classList.remove('after_content');
-    e.target.classList.add('after_content')
+  document.querySelector(".dropdown-item").classList.remove("after_content");
+  e.target.classList.add("after_content");
 }
 
-
-
-function handleIFrames(e) {
-    console.log(e);
-}
-
-
+// video slider
 function handleIFrame() {
-    let video = document.querySelector(".carousel-item.active iframe")
-    let videoSrc = video.getAttribute("src")
-   video.setAttribute("src", "") 
-   video.setAttribute("src", videoSrc) 
+  let video = document.querySelector(".carousel-item.active iframe");
+  let videoSrc = video.getAttribute("src");
+  video.setAttribute("src", "");
+  video.setAttribute("src", videoSrc);
 }

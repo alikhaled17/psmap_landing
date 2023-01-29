@@ -73,15 +73,28 @@ body::-webkit-scrollbar-thumb, body *::-webkit-scrollbar-thumb {
   direction: ltr !important;
 }
 
-#goals {
+.goals {
+  font-family: "Cairo";
   width: 100%;
-  min-height: 54vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin-top: 1rem;
-  background: #fff;
+  padding: 0 100px;
+  background-image: url(../../assets/images/goals/bg_web.svg);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 991px) {
+  .goals {
+    min-height: 70vh;
+    padding: 10px 20px 0;
+    background-size: 100%;
+    background-position: bottom;
+    background-image: url(../../assets/images/goals/bg_mobile.svg);
+    justify-content: flex-start;
+  }
 }
 
 .goals__icons {
@@ -91,8 +104,10 @@ body::-webkit-scrollbar-thumb, body *::-webkit-scrollbar-thumb {
 }
 @media (max-width: 991px) {
   .goals__icons {
+    margin-top: 24px;
     gap: 5px;
     justify-content: center;
+    margin-bottom: 10px;
   }
   .goals__icons img {
     max-height: 25px;
@@ -109,20 +124,9 @@ body::-webkit-scrollbar-thumb, body *::-webkit-scrollbar-thumb {
   text-transform: none;
   position: relative;
 }
-@media (max-width: 992px) {
-  .goals_title {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-}
-@media (max-width: 768px) and (orientation: portrait) {
-  .goals_title {
-    font-size: 16px;
-    text-align: center;
-  }
-}
 .goals_title:after {
   content: "";
+  border-radius: 4px;
   position: absolute;
   width: 30px;
   border: 2px solid #ff2800;
@@ -130,53 +134,25 @@ body::-webkit-scrollbar-thumb, body *::-webkit-scrollbar-thumb {
   bottom: -10px;
   left: 0%;
 }
-@media (max-width: 768px) and (orientation: portrait) {
+@media (max-width: 991px) {
   .goals_title:after {
-    left: 46%;
+    left: 45%;
+  }
+}
+@media (max-width: 991px) {
+  .goals_title {
+    font-size: 1.8rem;
+    text-align: center;
   }
 }
 
-.content_width {
-  width: 60%;
-  margin: auto;
+.goals_desc {
+  width: 40%;
 }
-@media (max-width: 768px) and (orientation: portrait) {
-  .content_width {
+@media (max-width: 991px) {
+  .goals_desc {
     width: 100%;
-  }
-}
-
-.sub_txt {
-  font-family: "Cairo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140.2%;
-  letter-spacing: 0.3px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  color: #363049;
-}
-@media (max-width: 992px) {
-  .sub_txt {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-  }
-}
-@media (max-width: 768px) and (orientation: portrait) {
-  .sub_txt {
-    font-size: 14px;
-  }
-}
-
-.cust_flex {
-  justify-content: space-between;
-}
-@media (max-width: 768px) and (orientation: portrait) {
-  .cust_flex {
-    justify-content: center;
-    align-items: center;
+    text-align: center;
   }
 }
 

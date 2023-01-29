@@ -82,10 +82,46 @@ body::-webkit-scrollbar-thumb, body *::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 1rem;
+  padding: 50px 100px;
 }
 @media (max-width: 768px) and (orientation: portrait) {
   #find {
+    padding: 0 20px;
     background: #fff;
+  }
+}
+
+.find__content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.find__content .find__card {
+  min-width: 30%;
+}
+@media (max-width: 991px) {
+  .find__content {
+    gap: 0;
+    flex-direction: column;
+  }
+}
+
+.get__start {
+  padding: 12px 24px;
+  text-align: center;
+  width: 172px;
+  background: #ff2800;
+  border-radius: 7px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 20px 0;
+  display: block;
+  margin: auto;
+}
+@media (max-width: 991px) {
+  .get__start {
+    width: 100%;
   }
 }
 
@@ -105,11 +141,19 @@ body::-webkit-scrollbar-thumb, body *::-webkit-scrollbar-thumb {
   border: 1px solid #f3f4fe;
   padding: 40px;
   margin-bottom: 1rem;
-  min-height: 38vh;
+  min-height: 55vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 @media (max-width: 991px) {
   .col_parent {
     padding: 20px;
+    min-height: 48vh;
+    align-items: center;
+    text-align: center;
   }
 }
 

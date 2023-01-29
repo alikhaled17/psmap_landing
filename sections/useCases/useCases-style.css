@@ -73,121 +73,119 @@ body::-webkit-scrollbar-thumb, body *::-webkit-scrollbar-thumb {
   direction: ltr !important;
 }
 
-#useCases {
+.useCases__section {
   width: 100%;
   min-height: 54vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 40px 100px;
   margin-top: 1rem;
   background-image: url(../../assets/images/useCases/useCases.png);
   background-size: cover;
 }
-
-@media (max-width: 991px) {
-  .usecases__img {
-    width: 50%;
-    margin: 20px;
-  }
+.useCases__section .provide_text {
+  color: #ff2800;
+  font-weight: 600;
 }
-
-.goals_title {
+.useCases__section .useCases__title {
   font-family: "Cairo";
   font-style: normal;
   font-weight: 700;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
+  text-align: center;
   color: #2f354d;
-  margin-bottom: 2rem;
   text-transform: none;
   position: relative;
+  margin: 40px 0;
 }
-@media (max-width: 992px) {
-  .goals_title {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+@media (max-width: 991px) {
+  .useCases__section .useCases__title {
+    font-size: 1.8rem;
   }
 }
-@media (max-width: 768px) and (orientation: portrait) {
-  .goals_title {
-    font-size: 16px;
-    text-align: center;
-  }
-}
-.goals_title:after {
+.useCases__section .useCases__title:after {
   content: "";
+  border-radius: 4px;
   position: absolute;
   width: 30px;
   border: 2px solid #ff2800;
   height: 0;
   bottom: -10px;
-  left: 0%;
+  left: 50%;
 }
-@media (max-width: 768px) and (orientation: portrait) {
-  .goals_title:after {
-    left: 46%;
-  }
+.useCases__section .usecases__img {
+  min-width: 50%;
+  padding: 0 20px;
 }
-
-.content_width {
-  width: 60%;
-  margin: auto;
+.useCases__section .useCases__content {
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.useCases__section .plans__card--list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.useCases__section .plans__card--list_item {
+  min-width: 50%;
+}
+.useCases__section .useCases__get__start {
+  padding: 12px 24px;
+  text-align: center;
+  width: 172px;
+  background: #ff2800;
+  border-radius: 7px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 20px 0;
+  display: block;
+}
+.useCases__section .plans__card--list_item {
+  align-items: center;
 }
 @media (max-width: 991px) {
-  .content_width {
-    padding: 30px;
+  .useCases__section {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    background-image: none;
   }
-}
-@media (max-width: 768px) and (orientation: portrait) {
-  .content_width {
+  .useCases__section .usecases__img {
+    max-width: 70%;
+    padding: 20px;
+  }
+  .useCases__section .provide_text {
+    color: #ff2800;
+    font-weight: 600;
+    text-align: center;
+  }
+  .useCases__section .useCases__title {
+    text-align: center;
+    margin: 40px auto;
     width: 100%;
   }
-}
-
-.sub_txt {
-  font-family: "Cairo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140.2%;
-  letter-spacing: 0.3px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  color: #363049;
-}
-@media (max-width: 992px) {
-  .sub_txt {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+  .useCases__section .useCases__content {
+    flex-direction: column;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
   }
-}
-@media (max-width: 768px) and (orientation: portrait) {
-  .sub_txt {
-    font-size: 14px;
+  .useCases__section .plans__card--list {
+    justify-content: flex-start;
+    align-items: center;
   }
-}
-
-.provide {
-  font-family: "Cairo";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  color: #FF2800;
-  text-transform: uppercase;
-}
-
-.ul_parent ul {
-  padding-left: 0;
-}
-
-.icon_color .icon {
-  color: #FF2800;
-  margin: 5px 4px;
-}
-.icon_color small {
-  color: #382b53;
+  .useCases__section .plans__card--list_item {
+    min-width: 40%;
+  }
+  .useCases__section .useCases__get__start {
+    margin: 20px auto;
+  }
 }
 
 /*# sourceMappingURL=useCases-style.css.map */

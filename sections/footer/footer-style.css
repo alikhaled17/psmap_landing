@@ -88,6 +88,10 @@ body::-webkit-scrollbar-thumb, body *::-webkit-scrollbar-thumb {
     padding-top: 12%;
   }
 }
+.footer .nav-item a {
+  text-decoration: none;
+  color: #2f354d;
+}
 
 .footer_logo {
   max-width: 155px;
@@ -120,8 +124,10 @@ body::-webkit-scrollbar-thumb, body *::-webkit-scrollbar-thumb {
 
 .footer_links.active::after {
   content: "";
+  border-radius: 4px;
   min-width: 30px;
   border-bottom: 3px solid #ff2800;
+  border-radius: 4px;
   position: absolute;
   bottom: -3px;
   left: 1%;

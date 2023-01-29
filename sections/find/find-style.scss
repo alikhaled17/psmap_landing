@@ -10,9 +10,41 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 1rem;
-
+  padding: 50px 100px;
   @media (max-width: 768px) and (orientation: portrait) {
+    padding: 0 20px;
     background: $color-white;
+  }
+}
+
+.find__content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  .find__card {
+    min-width: 30%;
+  }
+
+  @include respond-below(md) {
+    gap: 0;
+    flex-direction: column;
+  }
+}
+
+.get__start {
+  padding: 12px 24px;
+  text-align: center;
+  width: 172px;
+  background: #ff2800;
+  border-radius: 7px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 20px 0;
+  display: block;
+  margin: auto;
+  @include respond-below(md) {
+    width: 100%;
   }
 }
 
@@ -24,15 +56,27 @@
   }
 }
 
+// .find_card {
+//   min-height: 60vh;
+// }
+
 .col_parent {
   background-color: $color-white;
   border-radius: 10px;
   border: 1px solid #f3f4fe;
   padding: 40px;
   margin-bottom: 1rem;
-  min-height: 38vh;
+  min-height: 55vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   @include respond-below(md) {
     padding: 20px;
+    min-height: 48vh;
+    align-items: center;
+    text-align: center;
   }
 }
 .txt_head {

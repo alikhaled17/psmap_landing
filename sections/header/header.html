@@ -1,7 +1,74 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
+<div class="nav__section active">
+  <div class="nav__section--logo">
+    <img src="https://alikhaled17.github.io/psmap_page/assets/images/Logo.svg" alt="" class="img-fluid">
+  </div>
+  <div class="nav__section--list">
+    <span class="nav__section--item ">
+      <a onclick="clickNavItem(event)" class="nav-link links active" aria-current="page" href="#started">Home</a>
+    </span>
+    <span class="nav__section--item">
+      <a onclick="clickNavItem(event)" class="nav-link links" href="#find">About PSMAP</a>
+    </span>
+    <span class="nav__section--item">
+      <a onclick="clickNavItem(event)" class="nav-link links" href="#report">The Report</a>
+    </span>
+    <span class="nav__section--item">
+      <a onclick="clickNavItem(event)" class="nav-link links" href="#plans">Prices</a>
+    </span>
+    <span class="nav__section--item">
+      <a onclick="clickNavItem(event)" class="nav-link links" href="#about">PSMAP Community</a>
+    </span>
+    <span class="nav__section--item">
+      <a class="get__start">Get start</a>
+    </span>
+    <span class="nav__section--item dropdown">
+      <a class="nav__language nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <span>EN</span>
+      </a>
+      <ul class=" dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <span><a class="dropdown-item" onclick="clickDropdownItem(event)" href="#"><span>EN</span></a></span>
+        <span><a class="dropdown-item" onclick="clickDropdownItem(event)" href="#"><span>AR</span></a></span>
+      </ul>
+    </span>
+  </div>
+  <div class="menu__icon" onclick="openSidebar()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="nav__section_sidebar " onclick="closeSidebar(event)">
+    <div class="modal ">
+      <span class="logo">
+        <img src="https://alikhaled17.github.io/psmap_page/assets/images/Logo.svg" alt="" class="img-fluid">
+      </span>
+      <span class="modal--item active">
+        <a onclick="clickSideNavItem(event)" class="nav-link links active" aria-current="page" href="#started">Home</a>
+      </span>
+      <span class="modal--item">
+        <a onclick="clickSideNavItem(event)" class="nav-link links" href="#find">About PSMAP</a>
+      </span>
+      <span class="modal--item">
+        <a onclick="clickSideNavItem(event)" class="nav-link links" href="#report">The Report</a>
+      </span>
+      <span class="modal--item">
+        <a onclick="clickSideNavItem(event)" class="nav-link links" href="#plans">Prices</a>
+      </span>
+      <span class="modal--item">
+        <a onclick="clickSideNavItem(event)" class="nav-link links" href="#about">PSMAP Community</a>
+      </span>
+      <span class="languges">
+        <a class="lang__btn active">EN</a>
+        <a class="lang__btn">AR</a>
+      </span>
+    </div>
+
+  </div>
+</div>
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-white">
   <div class="container-fluid">
     <div class="logo">
-      <img src="https://alikhaled17.github.io/psmap_landing/assets/images/Logo.svg" alt="" class="img-fluid">
+      <img src="https://alikhaled17.github.io/psmap_page/assets/images/Logo.svg" alt="" class="img-fluid">
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,4 +105,4 @@
     </div>
   </div>
   </div>
-</nav>
+</nav> -->

@@ -60,4 +60,15 @@
   }
 }
 
+.video_title {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .video_title {
+    width: 80%;
+  }
+}
+
 /*# sourceMappingURL=about-style.css.map */

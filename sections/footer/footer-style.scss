@@ -13,6 +13,13 @@
   @include respond-below(md) {
     padding-top: 12%;
   }
+
+  .nav-item {
+    a {
+      text-decoration: none;
+      color: #2f354d;
+    }
+  }
 }
 
 .footer_logo {
@@ -44,8 +51,10 @@
 
 .footer_links.active::after {
   content: "";
+  border-radius: 4px;
   min-width: 30px;
   border-bottom: 3px solid #ff2800;
+  border-radius: 4px;
   position: absolute;
   bottom: -3px;
   left: 1%;

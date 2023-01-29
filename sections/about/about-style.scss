@@ -142,3 +142,11 @@ $breakpoints: (
     }
   }
 }
+.video_title{
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  @media (max-width: 768px){
+    width: 80%;
+  }
+}
